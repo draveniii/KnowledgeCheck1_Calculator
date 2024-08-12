@@ -30,16 +30,16 @@ namespace KnowledgeCheck1_Calculator
             return firstNumber / secondNumber;
         }
 
-        public int getFirstNumber()
+        public int GetFirstNumber()
         {
             return firstNumber;
         }
 
-        public int getSecondNumber()
+        public int GetSecondNumber()
         {  
             return secondNumber;
         }
-        public bool getNumbers()
+        public bool GetNumbers()
         {
             var tempFirstNumber = Console.ReadLine();
             var tempSecondNumber = Console.ReadLine();

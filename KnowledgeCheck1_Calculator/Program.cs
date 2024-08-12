@@ -8,7 +8,7 @@ namespace KnowledgeCheck1_Calculator
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
 
             Console.WriteLine("Hello. Press 1 for addition, 2 for subtraction, 3 for multiplication, and 4 for division");
@@ -21,33 +21,33 @@ namespace KnowledgeCheck1_Calculator
             {
                 case "1":
                     Console.WriteLine("Enter 2 integers to add");
-                    validInput = calculator.getNumbers();
+                    validInput = calculator.GetNumbers();
 
                     if (validInput == true)
                     {
-                        Console.Write($"{calculator.getFirstNumber()} + {calculator.getSecondNumber()} = ");
+                        Console.Write($"{calculator.GetFirstNumber()} + {calculator.GetSecondNumber()} = ");
                         Console.Write(calculator.Add());
                     }
                     break;
 
                 case "2":
                     Console.WriteLine("Enter 2 integers to subtract");
-                    validInput = calculator.getNumbers();
+                    validInput = calculator.GetNumbers();
 
                     if (validInput == true)
                     {
-                        Console.Write($"{calculator.getFirstNumber()} + {calculator.getSecondNumber()} = ");
+                        Console.Write($"{calculator.GetFirstNumber()} + {calculator.GetSecondNumber()} = ");
                         Console.Write(calculator.Subtract());
                     }
                     break;
 
                 case "3":
                     Console.WriteLine("Enter 2 integers to multiply");
-                    validInput = calculator.getNumbers();
+                    validInput = calculator.GetNumbers();
 
                     if (validInput == true)
                     {
-                        Console.Write($"{calculator.getFirstNumber()} + {calculator.getSecondNumber()} = ");
+                        Console.Write($"{calculator.GetFirstNumber()} + {calculator.GetSecondNumber()} = ");
                         Console.Write(calculator.Multiply());
                     }
                     break;
@@ -55,11 +55,11 @@ namespace KnowledgeCheck1_Calculator
 
                 case "4":
                     Console.WriteLine("Enter 2 integers to divide");
-                    validInput = calculator.getNumbers();
+                    validInput = calculator.GetNumbers();
 
                     if (validInput == true)
                     {
-                        Console.Write($"{calculator.getFirstNumber()} + {calculator.getSecondNumber()} = ");
+                        Console.Write($"{calculator.GetFirstNumber()} + {calculator.GetSecondNumber()} = ");
                         Console.Write(calculator.Divide());
                     }
                     break;
